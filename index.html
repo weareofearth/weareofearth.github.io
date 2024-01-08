@@ -20,23 +20,148 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
   
 <style>
-  
-body
-{
-  top: 25px;
-  text-indent: 50px;
-}
-  
-h1, h2, h3, h4
+
+body 
 {
   font-family: Arial, Helvetica, sans-serif;
 }
-  
-.p1, .p2
+
+* 
 {
-  font-family: "Lucida Console", "Courier New", monospace;
+  box-sizing: border-box;
+}
+
+.responsive-image
+{
+  width: 25%;
+  height: auto;
 }
   
+.header-section 
+{
+  width: 99%;
+  text-align: center;
+  background-color: #ffffff;
+  color: black;
+}
+ 
+.block 
+ {
+  display: inline-block;
+  border: none;
+  outline: 0;
+  width: 20%;
+  padding: 12px;
+  background-color: #000000;
+  color: white;
+  font-size: 12px;
+  text-align: center;
+     cursor: pointer;
+}
+  
+.block:hover 
+{
+  background-color: lightgray;
+  color: gray;
+}
+
+html
+{
+  scroll-behavior: smooth;
+}
+  
+a 
+{
+  text-decoration: none;
+  color: DodgerBlue;
+}
+  
+a:hover
+{
+    color: Aqua;
+}
+
+u 
+{
+  text-decoration: underline;
+}
+  
+.game-section 
+{
+  padding-top: 50px;
+  padding-bottom: 25px;
+  width: 76.25%;
+  background-color: #ffffff;
+  color: black;
+}
+
+.dot
+{
+  height: 5px;
+  width: 5px;
+  background-color: #000;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.text-section 
+{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 74%;
+  text-align: left;
+  background-color: #ffffff;
+  color: black;
+}
+
+.column 
+{
+  float: left;
+  height: 600px;
+}
+  
+.left 
+{
+  width: 66%;
+}
+  
+.right 
+{
+  width: 33%;
+}
+
+.row:after 
+{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.collection 
+{
+  max-width: 600px;
+  float: left;
+  width: 11%;
+  padding: 1px;
+}
+
+.sides::after 
+{
+  content: "";
+  clear: both;
+  display: table;
+}
+  
+@media screen and (max-width: 600px) 
+{
+  .column,
+  .left,
+  .right
+{
+  height: 100%;
+  width: 100%;
+}
+
 </style>
 </head>
   
@@ -44,7 +169,23 @@ h1, h2, h3, h4
   
 <div class="w3-container">
   
-<h1>WE ARE of Earth</h1>
+<!-- HEADER -->
+<div id="top" class="header-section">
+<center>
+<h1>WE ARE OF Earth</h1>
+<h3 style="color:gray;">CYBERSPACE STATION WEBGL</h3>
+<img src="https://github.com/arcadearthur/arcadearthur.github.io/blob/main/weareofearth-minimal_line-patch-blank-2023-HD+.png?raw=true" alt="LOGO" class="responsive-image" oncontextmenu="return false;" width="128" height="128">
+<p style="color:gray;">
+Click below to begin your mission briefing.
+</p>
+<a href= "#middle"><button class="block"><strong>ACCEPT</strong></button></a>
+<br>
+  <br>
+    <br>
+      <br>
+<hr style="height:1px; border-width:0; width: 74%; color:gray; background-color:gray">
+</center>
+</div>
   
 <!--SOMETHING HERE-->
   
