@@ -1,2 +1,2 @@
 # weareofearth.github.io
-weareofearth static page
+weareofearth static github page, home to our project links
